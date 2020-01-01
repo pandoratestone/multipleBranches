@@ -8,6 +8,7 @@ public class While_Loop {
 		while (i<=10) {
 			System.out.println("Infanite loo..");
 			i++;
+			System.out.println("incremented..........");
 		}
 	}
 

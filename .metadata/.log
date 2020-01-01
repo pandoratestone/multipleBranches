@@ -160,6 +160,7 @@ Java Model Exception: Java Model Status [<project root> [in JAVA] is not on its 
 !ENTRY org.eclipse.jface.text 2 0 2020-01-01 15:46:15.255
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.jdt.core 4 4 2020-01-01 15:57:34.336
 !MESSAGE Background Indexer Crash Recovery
 !STACK 0
@@ -169,12 +170,21 @@ java.lang.OutOfMemoryError: Requested array size exceeds VM limit
 	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:466)
 	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:458)
 	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:560)
+=======
+!ENTRY org.eclipse.jdt.core 4 4 2020-01-01 16:02:17.950
+!MESSAGE Background Indexer Crash Recovery
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at org.eclipse.jdt.internal.core.index.DiskIndex.computeDocumentNames(DiskIndex.java:339)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:517)
+>>>>>>> master
 	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:197)
 	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndex(IndexManager.java:905)
 	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:947)
 	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:644)
 	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:377)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
 !SESSION 2020-01-01 15:57:44.578 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_161
@@ -332,3 +342,5 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
 	... 9 more
+=======
+>>>>>>> master
